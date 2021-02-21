@@ -16,7 +16,7 @@ function Cart(props) {
 
     const { cartItems } = useSelector(cartSelector);
 
-    const { shippingAddress } = localStorage.getItem("shippingAddress") ? JSON.parse(localStorage.getItem("shippingAddress")) : {}
+    const { shippingAddress } = localStorage.getItem("shippingAddress") ? JSON.parse(localStorage.getItem("shippingAddress")) : { shippingAddress: {} }
 
     const paymentMethodSaved = localStorage.getItem("paymentMethod") ? JSON.parse(localStorage.getItem("paymentMethod")) : "COD"
 
