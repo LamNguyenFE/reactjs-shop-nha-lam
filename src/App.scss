@@ -1727,3 +1727,10 @@ ul.breadcrumb li a:hover {
   .product-detail-page {
   }
 }
+
+@-moz-document url-prefix() {
+  // Viết CSS của bạn tại đây
+  .menu__category {
+    align-self: start;
+  }
+}

@@ -19,7 +19,7 @@ function Product(props) {
                             <div className="discount-price">${product.price}</div>
                         </div>
 
-                        <Rating rating={4.5} numReviews={10} />
+                        <Rating rating={product.rating} numReviews={product.numReviews} />
                     </div>
                 </div>
             ) : (
@@ -35,7 +35,7 @@ function Product(props) {
                             </div>
                             <div className="rate">
                                 <div className="star">
-                                    <span className="fa fa-star checked"></span>
+                                    <span className="fa fa-star "></span>
                                     <span className="fa fa-star checked"></span>
                                     <span className="fa fa-star checked"></span>
                                     <span className="fa fa-star checked"></span>
